@@ -36,9 +36,12 @@ namespace PetManager
                 return object.Equals(obj, this);
             }
 
-            var pet = (Pet) obj;
-            return string.Equals(this.Name, pet.Name) && Birthday.Equals(pet.Birthday) &&
-                   string.Equals(this.Breed, pet.Breed);
+            //var pet = (Pet) obj;
+            //return string.Equals(this.Name, pet.Name) && Birthday.Equals(pet.Birthday) &&
+            //       string.Equals(this.Breed, pet.Breed);
+
+            var pet = (Pet)obj;
+            return Birthday.Equals(pet.Birthday) && string.Equals(this.Name, pet.Name) && string.Equals(this.Breed, pet.Breed);
         }
     }
 }
