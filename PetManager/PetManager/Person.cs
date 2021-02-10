@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 
 namespace PetManager {
+
+    // This is a comment
     public class Person {
         public Person() {
             this.Pets = new BindingList<Pet>();
